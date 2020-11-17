@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AlbumAdapter">
 
-    <ListView
-        android:id="@+id/songsListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="156dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

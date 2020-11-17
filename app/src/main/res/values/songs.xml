@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_album">
+        <item>Song_1</item>
+        <item>Song_2</item>
+        <item>Song_3</item>
+        <item>Song_4</item>
+        <item>Song_5</item>
+    </string-array>
+    <string-array name="second_album">
+        <item>Song_6</item>
+        <item>Song_7</item>
+        <item>Song_8</item>
+        <item>Song_9</item>
+        <item>Song_10</item>
+    </string-array>
+    <string-array name="third_album">
+        <item>Song_11</item>
+        <item>Song_12</item>
+        <item>Song_13</item>
+        <item>Song_14</item>
+        <item>Song_15</item>
+    </string-array>
+</resources>
