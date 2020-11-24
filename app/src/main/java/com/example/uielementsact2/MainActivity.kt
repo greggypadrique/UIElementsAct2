@@ -1,13 +1,17 @@
 package com.example.uielementsact2
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.util.Log
-import android.view.*
+
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
+import com.google.android.material.snackbar.Snackbar
+import android.os.Bundle
+import android.util.Log
+import android.view.*
+
 
 class MainActivity : AppCompatActivity() {
     val queuedSongs = ArrayList<String>()
@@ -41,6 +45,13 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.add_song_to_queue -> {
                 queuedSongs.add(songsArray[menuInfo.position])
+                val snackbar = Snackbar.make(findViewById(R.id.songsListView), "${songsArray[menuInfo.position]} is added ", Snackbar.LENGTH_LONG)
+                snackbar.setAction("Queue", View.OnClickListener { //Lamda function
+                    val intent = Intent(this, SongsQueueActivity::class.java)
+                    intent.putStringArrayListExtra("songs", queuedSongs)
+                    startActivity(intent)
+                })
+                snackbar.show()
                 true
             }
             else -> {
