@@ -25,7 +25,7 @@ class AlbumDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_album_details)
 
         val tv = findViewById<TextView>(R.id.albumTitleTextView) as TextView
-        tv.text = "Album"
+        tv.text = "ALBUM"
 
         val uri = intent.getStringExtra("imageUri")
 
