@@ -33,6 +33,8 @@ class AlbumDetailsActivity : AppCompatActivity() {
         val AlbumCover = findViewById<ImageView>(R.id.albumCover)
         val albumDetailsListView = findViewById<ListView>(R.id.albumDetailsListView)
 
+        val title = findViewById<TextView>(R.id.albumTitle)
+        title.setText(intent.getStringExtra("albumTitle").toString())
         
         var imageResource = getResources().getIdentifier(uri, null, getPackageName())
         var res = getResources().getDrawable(imageResource)
